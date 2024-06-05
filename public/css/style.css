@@ -1,0 +1,29 @@
+
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.icons {
+    font-size: 1.2em !important;
+}
+
+.skills {
+    font-size: 1.15em !important;
+    display: flex;
+    gap: 0.5em;
+}
+
+
+hr {
+    border-top-color: var(--pico-primary-focus) !important;
+}
+

@@ -1,0 +1,38 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    erubi (1.12.0)
+    ffi (1.16.3)
+    listen (3.9.0)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
+    nio4r (2.7.3)
+    puma (6.4.2)
+      nio4r (~> 2.0)
+    rack (3.0.11)
+    rackup (2.1.0)
+      rack (>= 3)
+      webrick (~> 1.8)
+    rb-fsevent (0.11.2)
+    rb-inotify (0.11.1)
+      ffi (~> 1.0)
+    rerun (0.14.0)
+      listen (~> 3.0)
+    roda (3.80.0)
+      rack
+    tilt (2.3.0)
+    webrick (1.8.1)
+
+PLATFORMS
+  x86_64-darwin-22
+
+DEPENDENCIES
+  erubi
+  puma
+  rackup
+  rerun
+  roda
+  tilt
+
+BUNDLED WITH
+   2.4.10
