@@ -7,8 +7,9 @@ WORKDIR /app
 # Copy the Gemfile and Gemfile.lock
 COPY Gemfile Gemfile.lock ./
 
-# Install the dependencies
-RUN bundle install
+# Install bundler and dependencies
+RUN gem install bundler && \
+    bundle install
 
 # Copy the rest of the application code
 COPY . .
@@ -17,4 +18,4 @@ COPY . .
 EXPOSE 9292
 
 # Start the Ruby application
-CMD ["bundle exec rackup"]
+CMD ["bundle", "exec", "rackup", "--host", "0.0.0.0", "-p", "9292"]
