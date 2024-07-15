@@ -1,73 +1,93 @@
 <main class="container">
 
-  <h1>Dominique Kleeven</h1>
+  <h1>Dominique K.</h1>
   <h4>Software Engineer & Tech enthusiast</h4>
 
 
   <div class="icons">
-    <a href="https://linkedin.com"><span class="mdi mdi-linkedin"></span></a>
-    <a href="https://github.com"> <span class="mdi mdi-github"></span></a>
-    <a href="mailto:dominique@kleeven.io"> <span class="mdi mdi-email"></span></a>
+    <a data-placement="bottom" data-tooltip="Linkedin" target="_blank" href="https://linkedin.com"><span class="mdi mdi-linkedin"></span></a>
+    <a data-placement="bottom" data-tooltip="GitHub" target="_blank" href="https://github.com">
+      <span class="mdi mdi-github"></span></a>
+    <a data-placement="bottom" data-tooltip="Blog" target="_blank" href="https://dominique-k.medium.com/"><span class="mdi mdi-post-outline"></span></a>
+    <a data-placement="bottom" data-tooltip="Email" target="_blank" href="mailto:dominique@kleeven.io">
+      <span class="mdi mdi-email"></span></a>
 
   </div>
   <hr>
   <h3>About Me <span class="mdi mdi-face-man"></span></h3>
   <p>
-    I am a software engineer with a passion for the Internet of Things. I have a strong background in software
+    I am a software engineer with a passion for the Internet of Things. I have a strong professional and educational
+    background in software
     development
-    and a keen interest in electronics and embedded systems. I am always looking for new challenges and opportunities to
-    learn and grow.
+    and a keen interest in back-end development and embedded systems. I am always looking for new challenges and
+    opportunities to
+    learn and grow. I tend to prefer freelance projects, as they allow me to work on a variety of projects and
+    technologies.
   </p>
   <h3>Skills <span class="mdi mdi-hammer-screwdriver"></span></h3>
+  <p>Some of the technologies that I have a decent amount of experience in:</p>
   <div class="skills">
     <span class="mdi mdi-language-java"> Java</span>
     <span class="mdi mdi-language-kotlin"> Kotlin</span>
     <span class="mdi mdi-language-ruby"> Ruby</span>
-    <span class="mdi mdi-language-lua"> Lua</span>
+    <span class="mdi mdi-language-csharp"> CSharp</span>
     <span class="mdi mdi-git"> Git</span>
     <span class="mdi mdi-docker"> Docker</span>
   </div>
+
   <hr>
   <h3>Projects <span class="mdi mdi-list-box-outline"></span></h3>
   <div class="projects">
-    Some of my projects are listed below, for more projects feel free visit my <a href="https://github.com">GitHub</a>
+    Some of my public projects are listed below, for more projects feel free to take a look at my
+    <a target="_blank" href="https://github.com/dominiquekleeven">GitHub</a>
     <br/>
     <br/>
-
+    <article>
+      <a target="_blank" href="https://github.com/openremote/openremote"><h4>OpenRemote HomeAssistant Integration</h4>
+      </a>
+      <h6>Java</h6>
+      <p>
+        I developed an integration between OpenRemote and HomeAssistant (HomeAssistant Agent). The agent seamlessly
+        maps/converts the most common devices and sensors from the HomeAssistant platform to the OpenRemote platform.
+      </p>
+    </article>
     <div class="grid">
       <article>
-        <a href="https://github.com"><h4>MQTT Gateway Interface</h4></a>
-
-
+        <a target="_blank" href="https://github.com/openremote/openremote"><h4>OpenRemote MQTT Gateway Interface</h4>
+        </a>
+        <h6>Java, Jakarta EE, Postgres, MQTT, Keycloak</h6>
+        <img src="/images/mqtt-api.png" alt="OpenRemote MQTT Gateway Interface">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam
-          nec
-          purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc
-          tincidunt
-          tincidunt.
+          As part of my graduation internship at OpenRemote, I developed a robust and well-tested MQTT gateway interface
+          for the OpenRemote IoT platform.
+          The interface provides access to tools such as the device management functionality of OpenRemote and gateway
+          specific features such as pending events and event acknowledgement.
         </p>
 
-      </article>
 
+      </article>
       <article>
-        <a href="https://github.com"><h4>3D Serial Printer Driver</h4></a>
+        <a target="_blank" href="https://github.com/dominiquekleeven/openremote_mqtt_device_gateway_prototype"><h4>OpenRemote Device Gateway</h4>
+        </a>
+        <h6>C++, ESP32, MQTT</h6>
+        <img src="/images/gateway-prototype.png" alt="OpenRemote Device Gateway Prototype">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam
-          nec
-          purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc
-          tincidunt
-          tincidunt.
+          I developed a prototype of a device gateway that integrates with the OpenRemote IoT platform. The gateway
+          handles connections locally over UDP, connecting various sensors/actuators. The gateway itself communicates
+          over MQTT with the OpenRemote platform, handling things such as provisioning devices, updating their
+          attributes and state.
         </p>
+
       </article>
+
+
     </div>
     <article>
-      <a href="https://github.com"><h4>OpenRemote HomeAssistant Integration</h4></a>
+      <a target="_blank" href="https://github.com/dominiquekleeven/printerlynx_printer_agent"><h4>3D Serial Printer Driver</h4></a>
+      <h6>Rust, Tokio, Marlin</h6>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec nunc tincidunt tincidunt. Nullam
-        nec
-        purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc tincidunt tincidunt. Nullam nec purus nec nunc
-        tincidunt
-        tincidunt.
+        I developed a proof of concept of a serial 3D printer driver for Marlin based 3D printers. The driver is written
+        in Rust and communicates directly over serial with any connected 3D printers.
       </p>
     </article>
 

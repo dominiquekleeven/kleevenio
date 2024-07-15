@@ -27,3 +27,13 @@ hr {
     border-top-color: var(--pico-primary-focus) !important;
 }
 
+article img {
+    width: 100%;
+    border-radius: 5px;
+    height: 375px;
+    max-height: 375px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+

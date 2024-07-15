@@ -1,18 +1,21 @@
 require "roda"
+require "logger"
 
+logger = Logger.new(STDOUT)
+logger.info "Starting server..."
+
+# App class - main entry point
 class App < Roda
-  plugin :render, escape: true, layout: 'layout' # render plugin is required to use view
-  plugin :public # public plugin is required to use static files
-
+  plugin :render, escape: true, layout: 'layout'
+  plugin :public
 
   route do |r|
-
-    r.public # serve static files from public directory
-
+    r.public
     r.root do
       view "index"
     end
   end
 end
+
 
 run App.freeze.app
